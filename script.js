@@ -21,14 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Evento para el botón Enviar
     sendBtn.addEventListener('click', (e) => {
         e.preventDefault();
-
-        let isAllCorrect = true;
-        inputs.forEach(input => {
-            isAllCorrect = !input.value.trim() ? false : true;
-        })
-        if (isAllCorrect) {
-            alert('Datos enviados correctamente');
-            cleanInputs();
-        }
+        alert('Datos enviados correctamente');
+        cleanInputs();
     })
 })
