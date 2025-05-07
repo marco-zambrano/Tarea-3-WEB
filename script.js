@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
     sendBtn.addEventListener('click', (e) => {
         e.preventDefault();
 
-        let idAllCorrect = true;
+        let isAllCorrect = true;
         inputs.forEach(input => {
-            idAllCorrect = !input.value.trim() ? false : true;
+            isAllCorrect = !input.value.trim() ? false : true;
         })
-        if (idAllCorrect) {
+        if (isAllCorrect) {
             alert('Datos enviados correctamente');
             cleanInputs();
         }
